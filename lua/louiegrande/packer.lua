@@ -14,7 +14,7 @@ return require('packer').startup(function(use)
     }
 
     use({
-        'hrose-pine/neovim',
+        'rose-pine/neovim',
         as = 'rose-pine',
         config = function()
             vim.cmd('colorscheme rose-pine')
@@ -22,7 +22,6 @@ return require('packer').startup(function(use)
     })
 
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-    use('nvim-treesitter/playground')
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
