@@ -2,6 +2,7 @@ local lsp_zero = require('lsp-zero')
 
 require('lspconfig').lua_ls.setup({})
 require('lspconfig').tsserver.setup({})
+require('lspconfig').svelte.setup({})
 
 lsp_zero.on_attach(function(client, bufnr)
     lsp_zero.default_keymaps({buffer = bufnr})
